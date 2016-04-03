@@ -26,7 +26,7 @@ Now, you have a completely independent local project to start development with.
 ## Local Development:
 1. `npm start`
 2. Navigate to `localhost:3000`
-3. Iterate, develop and commit your new project.  Hot Module reloading should be in place view webpack-dev-server.
+3. Iterate, develop and commit your new project.  Hot Module reloading should be in place via webpack-dev-server.
 
 ## Further Details
 
