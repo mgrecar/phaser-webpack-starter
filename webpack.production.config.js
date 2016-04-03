@@ -10,15 +10,10 @@ var pixi = path.join(phaserModule, 'build/custom/pixi.js');
 var p2 = path.join(phaserModule, 'build/custom/p2.js');
 
 var config = {
-  devtool: 'eval',
-  entry: [
-    'webpack/hot/dev-server',
-    'webpack-dev-server/client?http://localhost:8080',
-    mainPath
-  ],
+  devtool: 'source-map',
+  entry: mainPath,
   output: {
     path: buildPath,
-    publicPath: '/build/',
     filename: 'bundle.js'
   },
   module: {
@@ -41,7 +36,6 @@ var config = {
       }
     ]
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
   resolve: {
     alias: {
       'phaser': phaser,
